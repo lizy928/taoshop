@@ -1,5 +1,6 @@
 package com.muses.taoshop.web.controller.portal;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.muses.taoshop.item.entity.ItemDetail;
 import com.muses.taoshop.item.entity.ItemSpec;
 import com.muses.taoshop.item.entity.ItemSpecValue;
@@ -32,9 +33,9 @@ import java.util.List;
 @RequestMapping("/portal/item")
 public class ItemDetailController extends BaseController{
 
-    @Autowired
+    @Reference(version = "1.0.0")
     IItemService iItemService;
-    @Autowired
+    @Reference(version = "1.0.0")
     IItemSpecService iItemSpecService;
 
     @GetMapping("/toDetail/{spuId}/{skuId}")

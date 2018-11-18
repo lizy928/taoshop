@@ -25,11 +25,11 @@
 
     <dependencies>
         <!-- 热部署-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
         <!-- logback -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,20 +38,25 @@
 
         <!-- 商品信息服务-->
         <dependency>
-            <groupId>com.muses.taoshop.provider</groupId>
-            <artifactId>taoshop-provider-item</artifactId>
+            <groupId>com.muses.taoshop.provider-api</groupId>
+            <artifactId>taoshop-provider-api-item</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- 用户信息服务-->
         <dependency>
-            <groupId>com.muses.taoshop.provider</groupId>
-            <artifactId>taoshop-provider-usc</artifactId>
+            <groupId>com.muses.taoshop.provider-api</groupId>
+            <artifactId>taoshop-provider-api-usc</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- 平台核心服务 -->
         <dependency>
             <groupId>com.muses.taoshop.common</groupId>
             <artifactId>taoshop-common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.muses.taoshop.common</groupId>
+            <artifactId>taoshop-common-rpc</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--<dependency>

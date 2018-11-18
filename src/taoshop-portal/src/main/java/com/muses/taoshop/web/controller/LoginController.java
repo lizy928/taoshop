@@ -1,5 +1,6 @@
 package com.muses.taoshop.web.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.muses.taoshop.user.entity.User;
 import com.muses.taoshop.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,7 @@ import static com.muses.taoshop.base.SessionConsts.SESSION_SECURITY_CODE;
 @RequestMapping("/portal")
 public class LoginController extends BaseController{
 
-    @Autowired
+    @Reference
     IUserService userService;
 
     /**

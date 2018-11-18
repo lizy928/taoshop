@@ -1,5 +1,6 @@
 package com.muses.taoshop.web.controller.portal;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.muses.taoshop.item.entity.ItemList;
 import com.muses.taoshop.item.service.IItemCategoryService;
 import com.muses.taoshop.web.controller.BaseController;
@@ -28,7 +29,7 @@ import java.util.List;
 @RequestMapping(value = "/portal/category")
 public class ItemCategoryController extends BaseController{
 
-    @Autowired
+    @Reference(version = "1.0.0")
     IItemCategoryService iItemCategoryService;
 
     /**

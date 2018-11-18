@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.*;
@@ -33,6 +34,7 @@ import org.springframework.web.bind.annotation.*;
 @EnableAsync//开启对异步方法的支持
 @EnableAutoConfiguration
 @ServletComponentScan
+//@ImportResource({"classpath:dubbo-consume.xml"})
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class,
         MybatisAutoConfiguration.class,
         DataSourceTransactionManagerAutoConfiguration.class})

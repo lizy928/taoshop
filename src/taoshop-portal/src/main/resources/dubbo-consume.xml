@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://code.alibabatech.com/schema/dubbo
+	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 提供者应用信息，用于计算依赖关系-->
+    <dubbo:application name="${dubbo.application.name}" />
+
+    <!-- 服务注册中心暴露服务地址 -->
+    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}" />
+
+    <!-- 提供者提供的服务 -->
+    <!--<dubbo:reference id="iItemService" interface="com.muses.taoshop.item.service.IItemService" />-->
+    <!--<dubbo:reference id="iItemSpecService" interface="com.muses.taoshop.item.service.IItemSpecService" />-->
+    <!--<dubbo:reference id="iItemCategoryService" interface="com.muses.taoshop.item.service.IItemCategoryService" />-->
+    <!--<dubbo:reference id="iItemBrankService" interface="com.muses.taoshop.item.service.IItemBrankService" />-->
+    <!--<dubbo:reference id="iUserService" interface="com.muses.taoshop.user.service.IUserService" />-->
+
+</beans>
