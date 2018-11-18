@@ -1,10 +1,11 @@
 package com.muses.taoshop.item.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.muses.taoshop.item.entity.ItemCategory;
 import com.muses.taoshop.item.entity.ItemList;
 import com.muses.taoshop.item.mapper.ItemCategoryMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ import java.util.List;
  *    修改后版本:     修改人：  修改日期: 2018.06.17 11:01    修改内容:
  * </pre>
  */
-@Service
+@Service(version = "1.0.0")
 public class ItemCategoryServiceImpl implements IItemCategoryService{
 
     @Autowired

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://code.alibabatech.com/schema/dubbo
+	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 提供者应用信息，用于计算依赖关系-->
+    <dubbo:application name="${dubbo.application.name}" />
+
+    <!-- 服务注册中心暴露服务地址 -->
+    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}" />
+
+    <!-- 指定通讯规则-->
+    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" />
+
+    <!-- 提供者提供的服务 -->
+    <dubbo:service id="itemService" ref="itemService" interface="com.muses.taoshop.item.service.IItemService" timeout="2000" />
+    <dubbo:service id="iItemSpecService" ref="itemSpecService" interface="com.muses.taoshop.item.service.IItemSpecService" />
+    <dubbo:service id="iItemCategoryService" ref="itemCategoryService" interface="com.muses.taoshop.item.service.IItemCategoryService" />
+    <dubbo:service id="iItemBrankService" ref="itemBrankService" interface="com.muses.taoshop.item.service.IItemBrankService" />
+
+    <!--统一设置服务提供方的规则  -->
+    <dubbo:provider timeout="1000"></dubbo:provider>
+
+    <!--连接监控中心 -->
+    <dubbo:monitor protocol="registry"></dubbo:monitor>
+
+</beans>

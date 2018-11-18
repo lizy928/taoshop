@@ -1,9 +1,9 @@
 package com.muses.taoshop.user.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.muses.taoshop.user.entity.User;
 import com.muses.taoshop.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 
 @Service
