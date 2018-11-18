@@ -2,6 +2,7 @@ package com.muses.taoshop.item.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -17,7 +18,7 @@ import java.util.List;
  * </pre>
  */
 @Data
-public class ItemDetail {
+public class ItemDetail implements Serializable{
     /**
      * 品牌名称
      */

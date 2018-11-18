@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.util.Date;
 /**
  * <pre>
@@ -18,7 +19,7 @@ import java.util.Date;
  * </pre>
  */
 @Data
-public class ItemSpecValue {
+public class ItemSpecValue implements Serializable{
     /**
      * id
      */

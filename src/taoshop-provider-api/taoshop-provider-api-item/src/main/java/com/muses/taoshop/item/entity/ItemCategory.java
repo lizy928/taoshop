@@ -11,6 +11,7 @@ import lombok.ToString;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -26,7 +27,7 @@ import java.util.List;
  * </pre>
  */
 @Data
-public class ItemCategory {
+public class ItemCategory implements Serializable{
     /**
      * 商品品类id
      */

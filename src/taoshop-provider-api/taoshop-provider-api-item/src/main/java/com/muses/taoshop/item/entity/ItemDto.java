@@ -2,6 +2,8 @@ package com.muses.taoshop.item.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * <pre>
  *  商品信息DTO类
@@ -15,7 +17,7 @@ import lombok.Data;
  * </pre>
  */
 @Data
-public class ItemDto {
+public class ItemDto implements Serializable{
     /**
      * spu编号
      */

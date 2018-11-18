@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 /**
  * <pre>
  *  定义一个在门户网站显示商品信息的VO类
@@ -18,7 +20,7 @@ import lombok.ToString;
  * </pre>
  */
 @Data
-public class ItemPortal {
+public class ItemPortal implements Serializable{
 
     /**
      * skuId

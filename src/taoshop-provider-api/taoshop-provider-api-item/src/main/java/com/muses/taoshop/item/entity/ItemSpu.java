@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -20,7 +21,7 @@ import java.util.List;
  * </pre>
  */
 @Data
-public class ItemSpu {
+public class ItemSpu implements Serializable{
     /**
      * id
      */
