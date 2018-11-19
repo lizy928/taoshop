@@ -33,8 +33,6 @@ import org.springframework.web.bind.annotation.*;
 @EnableCaching
 @EnableAsync//开启对异步方法的支持
 @EnableAutoConfiguration
-@ServletComponentScan
-//@ImportResource({"classpath:dubbo-consume.xml"})
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class,
         MybatisAutoConfiguration.class,
         DataSourceTransactionManagerAutoConfiguration.class})

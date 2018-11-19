@@ -3,7 +3,6 @@ package com.muses.taoshop.item.service;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.muses.taoshop.item.entity.ItemDetail;
 import com.muses.taoshop.item.entity.ItemPortal;
-import com.muses.taoshop.item.entity.ItemSpec;
 import com.muses.taoshop.item.mapper.ItemMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
