@@ -76,7 +76,7 @@ public class MybatisConfig {
     @Bean(name = SQL_SESSION_FACTORY)
     public SqlSessionFactory sqlSessionFactory(@Qualifier(DATA_SOURCE_NAME)DataSource dataSource)throws Exception{
         //SpringBoot默认使用DefaultVFS进行扫描，但是没有扫描到jar里的实体类
-        //VFS.addImplClass(SpringBootVFS.class);
+        VFS.addImplClass(SpringBootVFS.class);
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
         factoryBean.setDataSource(dataSource);
         //factoryBean.setConfigLocation(new ClassPathResource("mybatis-config.xml"));

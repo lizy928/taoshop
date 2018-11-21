@@ -1,15 +1,16 @@
-package com.muses.taoshop.item.service;
+package com.muses.taoshop.item.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.muses.taoshop.item.entity.ItemSpec;
 import com.muses.taoshop.item.entity.ItemSpecValue;
 import com.muses.taoshop.item.mapper.ItemSpecMapper;
+import com.muses.taoshop.item.service.IItemSpecService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 
-@Service(version = "1.0.0")
+@Service(path="com.muses.taoshop.item.service.impl.ItemSpecServiceImpl",version = "1.0.0")
 public class ItemSpecServiceImpl implements IItemSpecService {
 
     @Autowired

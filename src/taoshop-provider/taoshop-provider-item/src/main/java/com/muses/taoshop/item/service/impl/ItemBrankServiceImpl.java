@@ -1,10 +1,13 @@
-package com.muses.taoshop.item.service;
+package com.muses.taoshop.item.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.muses.taoshop.item.entity.ItemBrand;
 import com.muses.taoshop.item.mapper.ItemBrandMapper;
+import com.muses.taoshop.item.service.IItemBrankService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -19,7 +22,7 @@ import java.util.List;
  *    修改后版本:     修改人：  修改日期: 2018.06.15 22:54    修改内容:
  * </pre>
  */
-@Service(version = "1.0.0")
+@Service(path="com.muses.taoshop.item.service.impl.ItemBrankServiceImpl",version = "1.0.0")
 public class ItemBrankServiceImpl implements IItemBrankService{
 
     @Autowired

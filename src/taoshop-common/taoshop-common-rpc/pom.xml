@@ -21,19 +21,32 @@
     </properties>
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>io.dubbo.springboot</groupId>
             <artifactId>spring-boot-starter-dubbo</artifactId>
             <version>${dubbo.springboot.version}</version>
+        </dependency>-->
+
+       <!-- <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>
+                spring-cloud-starter-netflix-hystrix
+            </artifactId>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
         </dependency>
 
-         <dependency>
+         <!--<dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-framework</artifactId>
             <version>2.12.0</version>
-        </dependency>
+        </dependency>-->
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
             <version>${zookeeper.version}</version>
@@ -47,7 +60,7 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>
