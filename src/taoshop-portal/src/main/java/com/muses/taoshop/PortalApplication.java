@@ -46,14 +46,6 @@ public class PortalApplication {
         return "portal web!";
     }
 
-    @RequestMapping("/doTest")
-    @ResponseBody
-    String doTest(){
-        System.out.println(Thread.currentThread().getName());
-        String threadName = Thread.currentThread().getName();
-        return threadName;
-    }
-
     public static void main(String[] args) throws Exception {
         SpringApplication.run(PortalApplication.class, args);
     }

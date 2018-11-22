@@ -3,6 +3,9 @@ package com.muses.taoshop.item.config;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
+import com.alibaba.dubbo.config.ServiceConfig;
+import com.muses.taoshop.item.service.IItemService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -45,4 +48,14 @@ public class ItemDubboConfig {
         protocolConfig.setPort(20882);
         return protocolConfig;
     }
+
+//    @Bean
+//    public ServiceConfig<IItemService> itemServiceServiceConfig(IItemService itemService){
+//        ServiceConfig<IItemService> serviceConfig = new ServiceConfig<>();
+//        serviceConfig.setInterface(IItemService.class);
+//        serviceConfig.setRef(itemService);
+//        serviceConfig.setVersion("1.0.0");
+//        return serviceConfig;
+//    }
+
 }
