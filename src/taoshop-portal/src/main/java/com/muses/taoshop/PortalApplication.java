@@ -2,6 +2,7 @@ package com.muses.taoshop;
 
 
 
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
@@ -33,7 +34,7 @@ import org.springframework.web.bind.annotation.*;
 @EnableCaching
 @EnableAsync//开启对异步方法的支持
 @EnableAutoConfiguration
-//@EnableDubbo(scanBasePackages="com.muses.taoshop")
+@EnableDubbo(scanBasePackages="com.muses.taoshop")
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class,
         MybatisAutoConfiguration.class,
         DataSourceTransactionManagerAutoConfiguration.class})
